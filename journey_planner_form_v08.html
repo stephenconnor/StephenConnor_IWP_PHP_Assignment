@@ -1,0 +1,202 @@
+<!--
+---------------------------------------------
+Program		: 
+Written By	: Stephen Connor	
+Date		: 21/12/2013
+Decription	:
+Version 	: v06
+---------------------------------------------
+--><!DOCTYPE html>
+<html>
+<head>
+	<title>Welcmome to Journey Planner</title>
+
+	<link rel="stylesheet" href="journey_planner_form_stylesheet.css" /> 
+
+</head>
+
+<body>
+	
+	
+	<form action="JourneyPlannerController.php" method="POST" name="journey_planner_form_v08"> 
+	
+	<h1>Enter your journey details:</h1>	
+
+		<p>Travel Direction</p>
+		<select name="travelDirection" >
+		<option value="N"> N </option>
+		<option value="S"> S </option>
+		</select>
+		<p id = "lightertext" >
+		N for Northbound or S for Southbound</p>
+		<br/>
+	
+		
+		<p id= "inline">Departing Between </p>
+		<select name="startTime" >
+		<option value="06:00:00"> 06:00 </option>
+		<option value="06:15:00"> 06:15 </option>
+		<option value="06:30:00"> 06:30 </option>
+		<option value="06:45:00"> 06:45 </option>
+		<option value="07:00:00"> 07:00 </option>
+		<option value="07:15:00"> 07:15 </option>
+		<option value="07:30:00"> 07:30 </option>
+		<option value="07:45:00"> 07:45 </option>
+		<option value="08:00:00"> 08:00 </option>
+		<option value="08:15:00"> 08:15 </option>
+		<option value="08:30:00"> 08:30 </option>
+		<option value="08:45:00"> 08:45 </option>
+		<option value="09:00:00"> 09:00 </option>
+		<option value="09:15:00"> 09:15 </option>
+		<option value="09:30:00"> 09:30 </option>
+		<option value="09:45:00"> 09:45 </option>
+		<option value="10:00:00"> 10:00 </option>
+		<option value="10:15:00"> 10:15 </option>
+		<option value="10:30:00"> 10:30 </option>
+		<option value="10:45:00"> 10:45 </option>
+		<option value="11:00:00"> 11:00 </option>
+		<option value="11:15:00"> 11:15 </option>
+		<option value="11:30:00"> 11:30 </option>
+		<option value="11:45:00"> 11:45 </option>
+		<option value="12:00:00"> 12:00 </option>
+		<option value="12:15:00"> 12:15 </option>
+		<option value="12:30:00"> 12:30 </option>
+		<option value="12:45:00"> 12:45 </option>
+		<option value="13:00:00"> 13:00 </option>
+		<option value="13:15:00"> 13:15 </option>
+		<option value="13:30:00"> 13:30 </option>
+		<option value="13:45:00"> 13:45 </option>
+		<option value="14:00:00"> 14:00 </option>
+		<option value="14:15:00"> 14:15 </option>
+		<option value="14:30:00"> 14:30 </option>
+		<option value="14:45:00"> 14:45 </option>
+		<option value="15:00:00"> 15:00 </option>
+		<option value="15:15:00"> 15:15 </option>
+		<option value="15:30:00"> 15:30 </option>
+		<option value="15:45:00"> 15:45 </option>
+		<option value="16:00:00"> 16:00 </option>
+		<option value="16:15:00"> 16:15 </option>
+		<option value="16:30:00"> 16:30 </option>
+		<option value="16:45:00"> 16:45 </option>
+		<option value="17:00:00"> 17:00 </option>
+		<option value="17:15:00"> 17:15 </option>
+		<option value="17:30:00"> 17:30 </option>
+		<option value="17:45:00"> 17:45 </option>
+		<option value="18:00:00"> 18:00 </option>
+		<option value="18:15:00"> 18:15 </option>
+		<option value="18:30:00"> 18:30 </option>
+		<option value="18:45:00"> 18:45 </option>
+		<option value="19:00:00"> 19:00 </option>
+		<option value="19:15:00"> 19:15 </option>
+		<option value="19:30:00"> 19:30 </option>
+		<option value="19:45:00"> 19:45 </option>
+		<option value="20:00:00"> 20:00 </option>
+		<option value="20:15:00"> 20:15 </option>
+		<option value="20:30:00"> 20:30 </option>
+		<option value="20:45:00"> 20:45 </option>
+		<option value="21:00:00"> 21:00 </option>
+		<option value="21:15:00"> 21:15 </option>
+		<option value="21:30:00"> 21:30 </option>
+		<option value="21:45:00"> 21:45 </option>	
+		<option value="22:00:00"> 22:00 </option>
+		<option value="22:15:00"> 22:15 </option>
+		<option value="22:30:00"> 22:30 </option>
+		<option value="22:45:00"> 22:45 </option>	
+		<option value="23:00:00"> 23:00 </option>
+		<option value="23:15:00"> 23:15 </option>
+		<option value="23:30:00"> 23:30 </option>
+		<option value="23:45:00"> 23:45 </option>
+		<option value="00:00:00"> 00:00 </option>
+		</select>  
+
+
+		<p id= "inline">and </p>
+		<select name="endTime" >
+		<option value="06:00:00"> 06:00 </option>
+		<option value="06:15:00"> 06:15 </option>
+		<option value="06:30:00"> 06:30 </option>
+		<option value="06:45:00"> 06:45 </option>
+		<option value="07:00:00"> 07:00 </option>
+		<option value="07:15:00"> 07:15 </option>
+		<option value="07:30:00"> 07:30 </option>
+		<option value="07:45:00"> 07:45 </option>
+		<option value="08:00:00"> 08:00 </option>
+		<option value="08:15:00"> 08:15 </option>
+		<option value="08:30:00"> 08:30 </option>
+		<option value="08:45:00"> 08:45 </option>
+		<option value="09:00:00"> 09:00 </option>
+		<option value="09:15:00"> 09:15 </option>
+		<option value="09:30:00"> 09:30 </option>
+		<option value="09:45:00"> 09:45 </option>
+		<option value="10:00:00"> 10:00 </option>
+		<option value="10:15:00"> 10:15 </option>
+		<option value="10:30:00"> 10:30 </option>
+		<option value="10:45:00"> 10:45 </option>
+		<option value="11:00:00"> 11:00 </option>
+		<option value="11:15:00"> 11:15 </option>
+		<option value="11:30:00"> 11:30 </option>
+		<option value="11:45:00"> 11:45 </option>
+		<option value="12:00:00"> 12:00 </option>
+		<option value="12:15:00"> 12:15 </option>
+		<option value="12:30:00"> 12:30 </option>
+		<option value="12:45:00"> 12:45 </option>
+		<option value="13:00:00"> 13:00 </option>
+		<option value="13:15:00"> 13:15 </option>
+		<option value="13:30:00"> 13:30 </option>
+		<option value="13:45:00"> 13:45 </option>
+		<option value="14:00:00"> 14:00 </option>
+		<option value="14:15:00"> 14:15 </option>
+		<option value="14:30:00"> 14:30 </option>
+		<option value="14:45:00"> 14:45 </option>
+		<option value="15:00:00"> 15:00 </option>
+		<option value="15:15:00"> 15:15 </option>
+		<option value="15:30:00"> 15:30 </option>
+		<option value="15:45:00"> 15:45 </option>
+		<option value="16:00:00"> 16:00 </option>
+		<option value="16:15:00"> 16:15 </option>
+		<option value="16:30:00"> 16:30 </option>
+		<option value="16:45:00"> 16:45 </option>
+		<option value="17:00:00"> 17:00 </option>
+		<option value="17:15:00"> 17:15 </option>
+		<option value="17:30:00"> 17:30 </option>
+		<option value="17:45:00"> 17:45 </option>
+		<option value="18:00:00"> 18:00 </option>
+		<option value="18:15:00"> 18:15 </option>
+		<option value="18:30:00"> 18:30 </option>
+		<option value="18:45:00"> 18:45 </option>
+		<option value="19:00:00"> 19:00 </option>
+		<option value="19:15:00"> 19:15 </option>
+		<option value="19:30:00"> 19:30 </option>
+		<option value="19:45:00"> 19:45 </option>
+		<option value="20:00:00"> 20:00 </option>
+		<option value="20:15:00"> 20:15 </option>
+		<option value="20:30:00"> 20:30 </option>
+		<option value="20:45:00"> 20:45 </option>
+		<option value="21:00:00"> 21:00 </option>
+		<option value="21:15:00"> 21:15 </option>
+		<option value="21:30:00"> 21:30 </option>
+		<option value="21:45:00"> 21:45 </option>	
+		<option value="22:00:00"> 22:00 </option>
+		<option value="22:15:00"> 22:15 </option>
+		<option value="22:30:00"> 22:30 </option>
+		<option value="22:45:00"> 22:45 </option>	
+		<option value="23:00:00"> 23:00 </option>
+		<option value="23:15:00"> 23:15 </option>
+		<option value="23:30:00"> 23:30 </option>
+		<option value="23:45:00"> 23:45 </option>
+		<option value="00:00:00"> 00:00 </option>
+		</select>
+		
+		<br/>
+		<br/>
+
+		<input id = "input-rounded-button" type="submit" value="Submit" />
+	</form>
+
+	<br/><br/><br/>
+
+	
+</body>
+</html>
+
+<!-- http://localhost/_Dev/IWP_Assignment/journey_planner_form_v08.html -->
